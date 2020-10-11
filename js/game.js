@@ -23,7 +23,7 @@ if(document.getElementById('mosquito')){
 	
 
 	if(vidas > 3){
-		alert("Você perdeu")
+		window.location.href = "fim_de_jogo.html"
 	}
 
 	else{
