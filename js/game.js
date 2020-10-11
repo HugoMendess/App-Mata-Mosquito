@@ -1,1 +1,16 @@
-alert('Testando')
+
+var altura = 0;
+var largura = 0;
+
+function ajustaTamanhoPalcoJogo(){
+	  altura = window.innerHeight;
+	  largura = window.innerWidth;
+
+
+      console.log("Altura: "+altura);
+	  console.log("largura: "+largura);
+}
+
+
+ajustaTamanhoPalcoJogo()
+
