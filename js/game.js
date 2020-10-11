@@ -4,6 +4,27 @@ var largura = 0;
 var vidas = 1;
 var tempo = 10;
 
+var criaMosquitoTempo = 1500
+
+var n = window.location.search
+n = n.replace('?', '')
+
+if(n === 'normal'){
+	criaMosquitoTempo = 1500
+	console.log(criaMosquitoTempo)
+}
+
+else if(n === 'dificil'){
+	criaMosquitoTempo = 1000
+	console.log(criaMosquitoTempo)
+}
+
+else if(n === 'chucknorris'){
+	criaMosquitoTempo = 750
+	console.log(criaMosquitoTempo)
+}
+
+
 function ajustaTamanhoPalcoJogo(){
 	  altura = window.innerHeight;
 	  largura = window.innerWidth;
@@ -111,4 +132,20 @@ function ladoAleatorio(){
 	
 		
 	}
+}
+
+
+function iniciarJogo(){
+  	var nivel = document.getElementById('nivel').value;
+
+  	if(nivel === ''){
+  		alert('Selecione um nível para iniciar o jogo')
+  		return false
+  	}
+  	else{
+
+  	window.location.href = 'app.html?' + nivel
+
+  }
+
 }

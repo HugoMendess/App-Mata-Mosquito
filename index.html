@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/game.css">
+
+ 	<script type="text/javascript" src="js/game.js"></script>
 </head>
 <body>
 
@@ -25,7 +27,7 @@
 			<div class="col">
 				<div class="d-flex justify-content-center">
 					<div class="mb-2">
-					<select class="form-control">
+					<select class="form-control" id="nivel">
 						<option value="">-- Selecione o nível</option>
 						<option value="normal">Normal</option>
 						<option value="dificil">Difícil</option>
@@ -44,7 +46,7 @@
 			
 			<div class="col">
 				<div class="d-flex justify-content-center">
-					<button type="button" class="btn btn-danger btn-lg">Iniciar Jogo</button>
+					<button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar Jogo</button>
 				</div>
 			
 			</div>
